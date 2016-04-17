@@ -2,7 +2,7 @@
 
 namespace Collecting.Infrastructure
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
         public DbSet<Book> Books { get; set; }
     }

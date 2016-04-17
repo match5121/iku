@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace Collecting
 {
-    /// <summary>
-    /// 収集業務における書籍のドメインモデル
-    /// </summary>
-    public class Book
+    public interface IBookRepository
     {
-        public ISBN ID { get; set; }
+        Book find(ISBN id);
+
+        List<Book> findAll();
+
+        void store(Book book);
+
+        void remove(Book book);
     }
 }

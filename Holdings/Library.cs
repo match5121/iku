@@ -11,6 +11,6 @@ namespace Holding
     /// </summary>
     public class Library
     {
-        internal List<Shelf> Shelfs;
+        public List<Shelf> Shelfs;
     }
 }
