@@ -115,8 +115,12 @@ namespace Holding
 
         public override string ToString()
         {
-            var prefix = EANPrefix != null ? EANPrefix + "-" : null;
-            return "ISBN" + prefix + RegistrationGroup + "-" + Registrant + "-" + Publication + "-" + Checkdegit;
+            if (EANPrefix == null)
+                // ISBN-10 (旧規格)
+                return "ISBN" + string.Join("-", RegistrationGroup, Registrant, Publication, Checkdegit);
+            else
+                // ISBN-13 (現行規格)
+                return "ISBN" + string.Join("-", EANPrefix, RegistrationGroup, Registrant, Publication, Checkdegit);
         }
     }
 }
