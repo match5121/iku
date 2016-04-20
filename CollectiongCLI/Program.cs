@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Collecting
+namespace Collectiong.Application
 {
-    class CollectiongService
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

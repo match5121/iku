@@ -9,12 +9,12 @@ namespace Collecting
 {
     public interface IBookRepository
     {
-        Book find(ISBN id);
+        Book Find(ISBN id);
 
-        List<Book> findAll();
+        List<Book> FindAll();
 
-        void store(Book book);
+        void Store(Book book);
 
-        void remove(Book book);
+        void Remove(Book book);
     }
 }
