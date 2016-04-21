@@ -13,5 +13,6 @@ namespace Collecting
     public class Book
     {
         public ISBN ID { get; set; }
+        public decimal price { get; set; }
     }
 }
