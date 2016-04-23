@@ -33,5 +33,7 @@ namespace Collecting
             _balance -= aBook.price;
             _library.Store(aBook);
         }
+
+
     }
 }
